@@ -1,6 +1,6 @@
 # Content based Recommend system
 思考方向:
-1.原本預期使用metadata的ranking，作為category分類，但因數量集中在某一類別，因此不使用此方法。
+#1.原本預期使用metadata的ranking，作為category分類，但因數量集中在某一類別，因此不使用此方法。
 2.使用metadata中title項，去除重複的部分後，進行NLP的資料前處理，包含:去除標點符號、字母小寫化、Lemmatization、去除stopwords。
       需要有次序性的使用，例如先使用remove_punctuation，這樣區分字詞的時候才不會無意義的字母連在一起；
       使用Lemmatization而不使用stemming的原因，也是因為爬文看到Lemmatization可以更好的處理黏在一起的字符，且是會考慮前後文及單字意義的轉換形式。
