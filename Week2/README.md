@@ -16,6 +16,8 @@
 A. 使用全部的testing data(所有顧客的平均成效)
 
     0. 僅使用title的TF-IDF結果去進行相似性推薦
+         
+       > 可能因分母較大而稀釋了效果
     
     1. 僅使用brand分類，由ranking最高者進行分類推薦
     
@@ -26,7 +28,7 @@ A. 使用全部的testing data(所有顧客的平均成效)
     
     4. 限制training data時間在最新的三個月內，使用title的TF-IDF結果去進行相似性推薦，不足10個推薦的項目用Top-15的項目隨機抽取補充
     
-        > 可見直接使用Top-10推薦效果較佳
+        > 3、4可見直接使用Top-10推薦效果較佳
         
 ![image](https://user-images.githubusercontent.com/49614247/147875800-85c979a5-30c4-4b1a-9f94-5c42482b568a.png)
 
